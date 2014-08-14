@@ -1,6 +1,6 @@
 include:
-  - ntp.client
+  - ntp.installed
   
 ntp:
   require:
-    - sls: ntp.client
+    - sls: ntp.installed
