@@ -3,17 +3,9 @@ salt-ntp
 
 Salt formula to set up and configure [ntp](http://www.ntp.org/)
 
-Requirements
+Parameters
 ------------
-The following pillars are available for configuration:
-  * ntp:pkg:salt['pillar.get']('os')
-  * ntp:svc:salt['pillar.get']('os')
-  * ntp:svc:manage
-  * ntp:enabled
-  * ntp:conf:path
-  * ntp:conf:source
-  * ntp:conf:servers
-  * ntp:conf:allow
+Please refer to example.pillar for a list of available pillar configuration options
 
 Usage
 -----
