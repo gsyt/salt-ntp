@@ -1,0 +1,14 @@
+ntp:
+  package:
+    upgrade: False
+  service:
+    manage: False
+    running: True
+    enable: True
+  config:
+    manage: False
+    source: salt://ntp/conf/ntp.conf
+  lookup:
+    package: ntp
+    service: ntp
+    config: /etc/ntp.conf
