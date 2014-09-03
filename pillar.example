@@ -3,7 +3,6 @@ ntp:
     upgrade: False
   service:
     manage: False
-    running: True
     enable: True
   config:
     manage: False

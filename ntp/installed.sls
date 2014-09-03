@@ -21,7 +21,6 @@ ntp.installed:
   {% if service.manage -%}
   service.{{ 'running' if service.enable else 'dead' }}:
     - name: {{ ntp.service }}
-    - enable: {{ service.enable }}
     - require:
       - pkg: ntp.installed
       - file: ntp.installed
